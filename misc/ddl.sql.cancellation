@@ -1,0 +1,58 @@
+
+DROP TABLE IF EXISTS `t_user`;
+/*机房管理员*/
+CREATE TABLE `jf_gly` (
+  `id` int(5) NOT NULL AUTO_INCREMENT,
+  `name` varchar(10) DEFAULT NULL COMMENT '名字',
+  `role` int(2) DEFAULT NULL COMMENT '角色',
+  `create_time` bigint(20) DEFAULT NULL COMMENT '更新时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+/*科室负责人（内部人员）*/
+CREATE TABLE `ks_fzr` (
+  `id` int(5) NOT NULL AUTO_INCREMENT,
+  `name` varchar(10) DEFAULT NULL COMMENT '名字',
+  `role` int(2) DEFAULT NULL COMMENT '角色',
+  `create_time` bigint(20) DEFAULT NULL COMMENT '更新时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+/*厂商负责人*/
+CREATE TABLE `cs_fzr` (
+  `id` int(5) NOT NULL AUTO_INCREMENT,
+  `name` varchar(10) DEFAULT NULL COMMENT '名字',
+  `factory` varchar(10) DEFAULT NULL COMMENT '厂商名字',
+  `tel` varchar(10) DEFAULT NULL COMMENT '电话',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+/*进入机房申请表*/
+CREATE TABLE `jf_sqb` (
+  `id` int(5) NOT NULL AUTO_INCREMENT,
+  `comment` varchar(10) DEFAULT NULL COMMENT '名字',
+  `role` int(2) DEFAULT NULL COMMENT '角色',
+  `create_time` bigint(20) DEFAULT NULL COMMENT '更新时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+/*机房*/
+CREATE TABLE `jf_cqb` (
+  `id` int(5) NOT NULL AUTO_INCREMENT,
+  `name` varchar(10) DEFAULT NULL COMMENT '名字',
+  `role` int(2) DEFAULT NULL COMMENT '角色',
+  `create_time` bigint(20) DEFAULT NULL COMMENT '更新时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+/*实际进入机房情况表*/
+CREATE TABLE `jf_cqb` (
+  `id` int(5) NOT NULL AUTO_INCREMENT,
+  `list` varchar(100) DEFAULT NULL COMMENT '实际进入机房人员名单',
+  `sjb_id` int(2) DEFAULT NULL COMMENT '角色',
+  `jrsj` bigint(20) DEFAULT NULL COMMENT '进入时间',
+  `lksj` bigint(20) DEFAULT NULL COMMENT '离开时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
