@@ -12,8 +12,6 @@ public class CurrentServiceImpl implements ICurrentService {
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 
-	
-	
 	public List<Item> getCurItems(int curPageNo) {
 		
 		return null;

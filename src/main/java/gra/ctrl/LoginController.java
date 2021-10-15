@@ -25,7 +25,6 @@ public class LoginController {
 	HttpServletRequest request;
 
 	public LoginController() {
-		System.out.println("LoginController.LoginController()");
 	}
 
 	@Autowired
@@ -55,7 +54,6 @@ public class LoginController {
 			return "redirect:/login";
 		}
 		request.getSession().setAttribute("CurAdmin", user);
-		System.out.println(user.getRoom());
 		return "redirect:/gra";
 	}
 }

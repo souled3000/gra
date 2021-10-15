@@ -5,27 +5,26 @@ import java.util.Date;
 public class Item {
 	
 	public Long id;
-	public String factoryStaff;
+	public String factorystaff;
 	public String factory;
 	public String dept;
-	public String deptStaff;
+	public String deptstaff;
 	public String admin;
 	public String room;
-	public Date signinTime;
-	public Date preSignoutTime;
-	public Date signoutTime;
-	public int status;
+	public Date signintime;
+	public Date preSignouttime;
+	public Date signouttime;
 	public Long getId() {
 		return id;
 	}
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public String getFactoryStaff() {
-		return factoryStaff;
+	public String getFactorystaff() {
+		return factorystaff;
 	}
-	public void setFactoryStaff(String factoryStaff) {
-		this.factoryStaff = factoryStaff;
+	public void setFactorystaff(String factorystaff) {
+		this.factorystaff = factorystaff;
 	}
 	public String getFactory() {
 		return factory;
@@ -39,11 +38,11 @@ public class Item {
 	public void setDept(String dept) {
 		this.dept = dept;
 	}
-	public String getDeptStaff() {
-		return deptStaff;
+	public String getDeptstaff() {
+		return deptstaff;
 	}
-	public void setDeptStaff(String deptStaff) {
-		this.deptStaff = deptStaff;
+	public void setDeptstaff(String deptstaff) {
+		this.deptstaff = deptstaff;
 	}
 	public String getAdmin() {
 		return admin;
@@ -57,23 +56,23 @@ public class Item {
 	public void setRoom(String room) {
 		this.room = room;
 	}
-	public Date getSigninTime() {
-		return signinTime;
+	public Date getSignintime() {
+		return signintime;
 	}
-	public void setSigninTime(Date signinTime) {
-		this.signinTime = signinTime;
+	public void setSignintime(Date signintime) {
+		this.signintime = signintime;
 	}
-	public Date getPreSignoutTime() {
-		return preSignoutTime;
+	public Date getPreSignouttime() {
+		return preSignouttime;
 	}
-	public void setPreSignoutTime(Date preSignoutTime) {
-		this.preSignoutTime = preSignoutTime;
+	public void setPreSignouttime(Date preSignouttime) {
+		this.preSignouttime = preSignouttime;
 	}
-	public Date getSignoutTime() {
-		return signoutTime;
+	public Date getSignouttime() {
+		return signouttime;
 	}
-	public void setSignoutTime(Date signoutTime) {
-		this.signoutTime = signoutTime;
+	public void setSignouttime(Date signouttime) {
+		this.signouttime = signouttime;
 	}
 	public int getStatus() {
 		return status;
@@ -81,4 +80,6 @@ public class Item {
 	public void setStatus(int status) {
 		this.status = status;
 	}
+	public int status;
+	
 }

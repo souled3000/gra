@@ -7,14 +7,36 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import gra.busi.ICurrentService;
+import gra.busi.Page;
+import gra.busi.PageService;
+import gra.o.Item;
+
 @Controller
 public class CurrentController {
 
 	@Autowired
 	HttpServletRequest request;
 
+	@Autowired
+	ICurrentService currentService;
+
+	@Autowired
+	PageService pageService;
+
 	@RequestMapping(value = "/current", method = RequestMethod.GET)
-	public void current() {
+	public void current(Integer curPageNo) {
+		Page page = null;
+		if (curPageNo == null) {
+			page = (Page) request.getSession().getAttribute("page");
+			if (page == null) {
+				curPageNo = Integer.valueOf(0);
+			} else
+				curPageNo = page.getCurPageNo();
+		}
+		page = pageService.queryByPageForMySQL("select * from t_item where status=0 order by signintime desc", new Object[] {}, curPageNo, 16, Item.class);
+		request.getSession().setAttribute("page", page);
+
 	}
 
 }
