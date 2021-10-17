@@ -65,6 +65,10 @@ public final class gra_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<script type=\"text/javascript\" src=\"./lib/jquery.js\"></script>\r\n");
       out.write("<script type=\"text/javascript\" src=\"./lib/bootstrap.min.js\"></script>\r\n");
       out.write("<link type=\"text/css\" rel=\"stylesheet\" href=\"./lib/bootstrap.min.css\" />\r\n");
+      out.write("<link href=\"./lib/bootstrap-combined.min.css\" rel=\"stylesheet\">\r\n");
+      out.write("<script src=\"./lib/bootstrap-contextmenu.js\"></script>\r\n");
+      out.write("<script src=\"./lib/prettify.js\"></script>\r\n");
+      out.write("\r\n");
       out.write("\r\n");
       out.write("<!-- Custom styles for this template -->\r\n");
       out.write("<link href=\"./lib/gra.css\" rel=\"stylesheet\">\r\n");
@@ -106,7 +110,6 @@ public final class gra_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t\t<ul class=\"nav nav-sidebar\" id=\"_menu\">\r\n");
       out.write("\t\t\t\t\t<li id=\"current\"><a href=\"#\">机房当前情况</a></li>\r\n");
       out.write("\t\t\t\t\t<li id=\"signin\"><a href=\"#\">进入机房登记</a></li>\r\n");
-      out.write("\t\t\t\t\t<li id=\"singout\"><a href=\"#\">离开机房登记</a></li>\r\n");
       out.write("\t\t\t\t\t<li id=\"his\"><a href=\"#\">历史查询</a></li>\r\n");
       out.write("\t\t\t\t</ul>\r\n");
       out.write("\t\t\t</div>\r\n");

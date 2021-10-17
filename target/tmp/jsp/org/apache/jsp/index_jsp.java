@@ -56,7 +56,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       out.print(basePath);
       out.write("\">\n");
       out.write("    \n");
-      out.write("    <title>My JSP 'index.jsp' starting page</title>\n");
+      out.write("    <title>机房门禁系统</title>\n");
       out.write("\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n");
       out.write("\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n");
       out.write("\t<meta http-equiv=\"expires\" content=\"0\">    \n");
@@ -72,11 +72,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       out.write("\t</script>\n");
       out.write("  </head>\n");
       out.write("  \n");
-      out.write("  <body>\n");
-      out.write("    ");
-      out.print(basePath);
-      out.write("<br>\n");
-      out.write("  </body>\n");
       out.write("</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

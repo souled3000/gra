@@ -1,9 +1,11 @@
 package gra.utils;
 
 import java.math.BigInteger;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.apache.commons.io.EndianUtils;
-import org.apache.commons.lang.math.NumberUtils;
 
 import com.alibaba.fastjson.serializer.JSONSerializer;
 import com.alibaba.fastjson.serializer.PropertyFilter;
@@ -22,6 +24,7 @@ public class MiscUtils {
 		}
 		return outByte;
 	}
+
 	public static byte[] fromHex(String hex) {
 		byte[] bytes = new byte[hex.length() / 2];
 		for (int i = 0; i < bytes.length; i++) {
@@ -31,7 +34,7 @@ public class MiscUtils {
 	}
 
 	public static String toHex(byte... bytes) {
-		if(bytes==null||bytes.length==0){
+		if (bytes == null || bytes.length == 0) {
 			return "";
 		}
 		BigInteger bi = new BigInteger(1, bytes);
@@ -148,9 +151,6 @@ public class MiscUtils {
 		return aim;
 	}
 
-	public static void main(String[] args) throws Exception {
-		testCrc();
-	}
 
 	public static void f3() {
 		byte[] a = new byte[] { 0x00, 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06 };
@@ -211,13 +211,12 @@ public class MiscUtils {
 		} /* end while */
 	}
 
-
 	public static void MaskContent(byte[] payload, short b, short e, byte[] mask, int mb) {
-		short desp = (short)(mask[mb]&0xff);
+		short desp = (short) (mask[mb] & 0xff);
 		byte mask_index = (byte) mb;
 		for (short i = b; i < e; i++) {
-			mask_index = (byte) ((i-b + desp) % 4);
-			payload[i] ^= mask[mask_index+mb];
+			mask_index = (byte) ((i - b + desp) % 4);
+			payload[i] ^= mask[mask_index + mb];
 		} /* end while */
 	}
 
@@ -242,4 +241,5 @@ public class MiscUtils {
 		}
 		return key;
 	}
+
 }

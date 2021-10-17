@@ -21,6 +21,10 @@
 <script type="text/javascript" src="./lib/jquery.js"></script>
 <script type="text/javascript" src="./lib/bootstrap.min.js"></script>
 <link type="text/css" rel="stylesheet" href="./lib/bootstrap.min.css" />
+<link href="./lib/bootstrap-combined.min.css" rel="stylesheet">
+<script src="./lib/bootstrap-contextmenu.js"></script>
+<script src="./lib/prettify.js"></script>
+
 
 <!-- Custom styles for this template -->
 <link href="./lib/gra.css" rel="stylesheet">
@@ -56,7 +60,6 @@
 				<ul class="nav nav-sidebar" id="_menu">
 					<li id="current"><a href="#">机房当前情况</a></li>
 					<li id="signin"><a href="#">进入机房登记</a></li>
-					<li id="singout"><a href="#">离开机房登记</a></li>
 					<li id="his"><a href="#">历史查询</a></li>
 				</ul>
 			</div>

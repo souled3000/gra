@@ -77,7 +77,6 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
 
-      out.write('\n');
       out.write("\n");
       out.write("<!DOCTYPE html>\n");
       out.write("<html lang=\"zh-CN\">\n");
@@ -98,12 +97,9 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<!-- Custom styles for this template -->\n");
       out.write("<link href=\"./lib/signin.css\" rel=\"stylesheet\">\n");
       out.write("\n");
-      out.write("\n");
-      out.write("\n");
       out.write("</head>\n");
       out.write("\n");
       out.write("<body>\n");
-      out.write("\n");
       out.write("\t<div class=\"container\">\n");
       out.write("\t\t");
       //  form:form
@@ -218,7 +214,6 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
         _jspx_th_form_form_0.doFinally();
         _jspx_tagPool_form_form_role_modelAttribute_class.reuse(_jspx_th_form_form_0);
       }
-      out.write("\n");
       out.write("\n");
       out.write("\t</div>\n");
       out.write("</body>\n");

@@ -4,7 +4,7 @@ CREATE TABLE `t_item` (
   `factory` varchar(30) DEFAULT NULL COMMENT '厂家',
   `dept` varchar(30) DEFAULT NULL COMMENT '科室',
   `deptstaff` varchar(30) DEFAULT NULL COMMENT '科室负责人',
-  `admin` varchar(30) DEFAULT NULL COMMENT '机房管理员名',
+  `adm` varchar(30) DEFAULT NULL COMMENT '机房管理员名',
   `room` varchar(30) DEFAULT NULL COMMENT '机房名',
   `signintime` bigint(20) DEFAULT NULL COMMENT '进入机房时间',
   `presignouttime` bigint(20) DEFAULT NULL COMMENT '预计离开机房时间',

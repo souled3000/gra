@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowCallbackHandler;
 import org.springframework.stereotype.Repository;
+
 @Repository
 public class PageService {
 
@@ -62,12 +63,10 @@ public class PageService {
 						}
 						Method[] methods = cla.getMethods();
 						List<String> fields = new ArrayList<String>();
-						System.out.println("----------------------------------------loook-----------------------------------------");
 						for (int i = 0; i < methods.length; i++) {
 							if (methods[i].getName().trim().startsWith("set")) {
 								String f = methods[i].getName().trim().substring(3);
 								f = (f.charAt(0) + "").toLowerCase().trim() + f.substring(1);
-								System.out.println(f);
 								fields.add(f);
 							}
 						}

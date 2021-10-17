@@ -9,11 +9,39 @@ public class Item {
 	public String factory;
 	public String dept;
 	public String deptstaff;
-	public String admin;
+	public String adm;
 	public String room;
 	public Date signintime;
-	public Date preSignouttime;
+	public String strsignintime;
+	public Date presignouttime;
+	public String strpresignouttime;
+	public String getAdm() {
+		return adm;
+	}
+	public void setAdm(String adm) {
+		this.adm = adm;
+	}
 	public Date signouttime;
+	public String strsignouttime;
+
+	public String getStrsignintime() {
+		return strsignintime;
+	}
+	public void setStrsignintime(String strsignintime) {
+		this.strsignintime = strsignintime;
+	}
+	public String getStrpresignouttime() {
+		return strpresignouttime;
+	}
+	public void setStrpresignouttime(String strpresignouttime) {
+		this.strpresignouttime = strpresignouttime;
+	}
+	public String getStrsignouttime() {
+		return strsignouttime;
+	}
+	public void setStrsignouttime(String strsignouttime) {
+		this.strsignouttime = strsignouttime;
+	}
 	public Long getId() {
 		return id;
 	}
@@ -44,12 +72,7 @@ public class Item {
 	public void setDeptstaff(String deptstaff) {
 		this.deptstaff = deptstaff;
 	}
-	public String getAdmin() {
-		return admin;
-	}
-	public void setAdmin(String admin) {
-		this.admin = admin;
-	}
+
 	public String getRoom() {
 		return room;
 	}
@@ -62,11 +85,12 @@ public class Item {
 	public void setSignintime(Date signintime) {
 		this.signintime = signintime;
 	}
-	public Date getPreSignouttime() {
-		return preSignouttime;
+
+	public Date getPresignouttime() {
+		return presignouttime;
 	}
-	public void setPreSignouttime(Date preSignouttime) {
-		this.preSignouttime = preSignouttime;
+	public void setPresignouttime(Date presignouttime) {
+		this.presignouttime = presignouttime;
 	}
 	public Date getSignouttime() {
 		return signouttime;

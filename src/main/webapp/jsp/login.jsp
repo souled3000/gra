@@ -6,7 +6,6 @@
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
 %>
-<%--<spring:message code="key" /> --%>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -26,12 +25,9 @@
 <!-- Custom styles for this template -->
 <link href="./lib/signin.css" rel="stylesheet">
 
-
-
 </head>
 
 <body>
-
 	<div class="container">
 		<form:form modelAttribute="user" class="form-signin" role="form">
 			<h2 class="form-signin-heading">请登录</h2>
@@ -51,7 +47,6 @@
 			<!--  	<form:errors path="name" cssClass="error" /><form:errors path="pwd" cssClass="error"/><form:errors id="*" cssClass="error"/>	-->
 			<button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
 		</form:form>
-
 	</div>
 </body>
 </html>

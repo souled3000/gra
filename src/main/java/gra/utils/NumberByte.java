@@ -68,7 +68,8 @@ public final class NumberByte {
 	}
 
 	public static void main(String[] args) {
-//		Long l = System.currentTimeMillis();
+		Long l = System.currentTimeMillis();
+		System.out.println(l);
 //		System.out.println(ByteUtil.toHex(NumberByte.long2Byte(l)));
 //		System.out.println(Long.toHexString(l).toUpperCase());
 //		System.out.println(byte2Int(int2Byte(-1)));

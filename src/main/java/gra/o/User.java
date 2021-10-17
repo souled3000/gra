@@ -40,17 +40,3 @@ public class User {
 		this.room = room;
 	}
 }
-
-class parent{
-	public String f(int a){
-		return null;
-	}
-}
-class sub extends parent{
-//	public int f(int a){
-//		return 0;
-//	}
-}
-
-
-

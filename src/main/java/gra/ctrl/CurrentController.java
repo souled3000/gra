@@ -30,11 +30,11 @@ public class CurrentController {
 		if (curPageNo == null) {
 			page = (Page) request.getSession().getAttribute("page");
 			if (page == null) {
-				curPageNo = Integer.valueOf(0);
+				curPageNo = Integer.valueOf(1);
 			} else
 				curPageNo = page.getCurPageNo();
 		}
-		page = pageService.queryByPageForMySQL("select * from t_item where status=0 order by signintime desc", new Object[] {}, curPageNo, 16, Item.class);
+		page = pageService.queryByPageForMySQL("select * from t_item where status=0 order by signintime desc", new Object[] {}, curPageNo, 15, Item.class);
 		request.getSession().setAttribute("page", page);
 
 	}
