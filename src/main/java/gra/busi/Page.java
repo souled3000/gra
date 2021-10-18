@@ -8,7 +8,16 @@ import java.util.List;
  **/
 public class Page {
     private int curPageNo;   //当前页
-    public int getCurPageNo() {
+    private String staff;
+    public String getStaff() {
+		return staff;
+	}
+
+	public void setStaff(String staff) {
+		this.staff = staff;
+	}
+
+	public int getCurPageNo() {
 		return curPageNo;
 	}
 
