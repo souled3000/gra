@@ -72,6 +72,9 @@ public final class current_jsp extends org.apache.jasper.runtime.HttpJspBase
 
       out.write("\r\n");
       out.write("\r\n");
+      out.write("<link href=\"./lib/bootstrap-combined.min.css\" rel=\"stylesheet\">\r\n");
+      out.write("<script src=\"./lib/bootstrap-contextmenu.js\"></script>\r\n");
+      out.write("<script src=\"./lib/prettify.js\"></script>\r\n");
       out.write("\r\n");
       out.write("\r\n");
       out.write("<h2 class=\"sub-header\">机房当前情况</h2>\r\n");

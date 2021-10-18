@@ -13,6 +13,9 @@ public class Item {
 	public String room;
 	public Date signintime;
 	public String strsignintime;
+	
+	public Date signouttime;
+	
 	public Date presignouttime;
 	public String strpresignouttime;
 	public String getAdm() {
@@ -21,7 +24,6 @@ public class Item {
 	public void setAdm(String adm) {
 		this.adm = adm;
 	}
-	public Date signouttime;
 	public String strsignouttime;
 
 	public String getStrsignintime() {

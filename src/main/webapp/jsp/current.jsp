@@ -9,6 +9,9 @@
 			+ path + "/";
 %>
 
+<link href="./lib/bootstrap-combined.min.css" rel="stylesheet">
+<script src="./lib/bootstrap-contextmenu.js"></script>
+<script src="./lib/prettify.js"></script>
 
 
 <h2 class="sub-header">机房当前情况</h2>

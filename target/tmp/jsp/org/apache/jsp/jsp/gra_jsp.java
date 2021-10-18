@@ -65,9 +65,6 @@ public final class gra_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<script type=\"text/javascript\" src=\"./lib/jquery.js\"></script>\r\n");
       out.write("<script type=\"text/javascript\" src=\"./lib/bootstrap.min.js\"></script>\r\n");
       out.write("<link type=\"text/css\" rel=\"stylesheet\" href=\"./lib/bootstrap.min.css\" />\r\n");
-      out.write("<link href=\"./lib/bootstrap-combined.min.css\" rel=\"stylesheet\">\r\n");
-      out.write("<script src=\"./lib/bootstrap-contextmenu.js\"></script>\r\n");
-      out.write("<script src=\"./lib/prettify.js\"></script>\r\n");
       out.write("\r\n");
       out.write("\r\n");
       out.write("<!-- Custom styles for this template -->\r\n");
@@ -92,10 +89,10 @@ public final class gra_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t</div>\r\n");
       out.write("\t\t\t<div id=\"navbar\" class=\"navbar-collapse collapse\">\r\n");
       out.write("\t\t\t\t<ul class=\"nav navbar-nav navbar-right\">\r\n");
-      out.write("\t\t\t\t\t<li><a href=\"#\">");
+      out.write("\t\t\t\t\t<li><a href=\"#\">当前机房管理员：");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${CurAdmin.name }", java.lang.String.class, (PageContext)_jspx_page_context, null));
       out.write("</a></li>\r\n");
-      out.write("            \t\t<li><a href=\"#\">");
+      out.write("            \t\t<li><a href=\"#\">当前所在机房：");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${CurAdmin.room }", java.lang.String.class, (PageContext)_jspx_page_context, null));
       out.write("</a></li>\r\n");
       out.write("\t\t\t\t\t<li><a href=\"./index.jsp\">退出</a></li>\r\n");

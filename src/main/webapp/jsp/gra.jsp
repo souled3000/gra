@@ -21,9 +21,6 @@
 <script type="text/javascript" src="./lib/jquery.js"></script>
 <script type="text/javascript" src="./lib/bootstrap.min.js"></script>
 <link type="text/css" rel="stylesheet" href="./lib/bootstrap.min.css" />
-<link href="./lib/bootstrap-combined.min.css" rel="stylesheet">
-<script src="./lib/bootstrap-contextmenu.js"></script>
-<script src="./lib/prettify.js"></script>
 
 
 <!-- Custom styles for this template -->
@@ -46,8 +43,8 @@
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">${CurAdmin.name }</a></li>
-            		<li><a href="#">${CurAdmin.room }</a></li>
+					<li><a href="#">当前机房管理员：${CurAdmin.name }</a></li>
+            		<li><a href="#">当前所在机房：${CurAdmin.room }</a></li>
 					<li><a href="./index.jsp">退出</a></li>
 				</ul>
 			</div>

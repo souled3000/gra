@@ -16,6 +16,12 @@ function goto(n){
 		// responseTxt + ":" + statusTxt);
 	});
 }
+function gotohis(n){
+	$('#_content').load(basePath + '/his?pageNo='+n, function(responseTxt, statusTxt, xhr) {
+		// alert("Error: " + xhr.status + ": " + xhr.statusText + ":" +
+		// responseTxt + ":" + statusTxt);
+	});
+}
 
 
 function signout(n,pageNo){
