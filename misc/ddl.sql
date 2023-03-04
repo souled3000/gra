@@ -1,3 +1,4 @@
+use crm;
 CREATE TABLE `t_item` (
   `id` int(5) NOT NULL AUTO_INCREMENT,
   `factorystaff` varchar(30) DEFAULT NULL COMMENT '厂家人员',
