@@ -1,0 +1,76 @@
+安装MySQL
+更新列表
+sudo apt-get update
+安装MySQL服务器
+sudo apt-get install mysql-server
+在安装过程中，系统将提示您创建root密码。选择一个安全的，并确保记住它，因为后面需要用到这个密码。
+
+安装MySQL客户端
+sudo apt-get install mysql-client
+————————————————
+版权声明：本文为CSDN博主「奉君逍遥」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/hwx865/article/details/90287715
+
+
+MySQL数据库基本使用
+启动MySQL数据库服务
+sudo service mysql start
+或
+sudo systemctl start mysql.service
+重启MySQL数据库服务
+sudo service mysql restart
+或
+sudo systemctl restart mysql.service
+停止MySQL数据库服务
+sudo service mysql stop
+或
+sudo systemctl stop mysql.service
+查看MySQL运行状态
+sudo service mysql status
+或
+sudo systemctl status mysql.service
+设置MySQL服务开机自启动
+sudo service mysql enable
+或
+sudo systemctl enable mysql.service
+停止MySQL服务开机自启动
+sudo service mysql disable
+或
+sudo systemctl disable mysql.service
+MySQL的配置文件
+sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf
+————————————————
+版权声明：本文为CSDN博主「奉君逍遥」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/hwx865/article/details/90287715
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+配置MySQL远程登录
+有时候，为了开发方便，我们需要使用本地电脑远程访问和管理MySQL数据库。默认情况下，为了安全MySQL只允许本地登录，如果要开启远程连接，则需要修改/etc/mysql/mysql.conf.d/mysqld.cnf配置文件。
+
+打开配置文件，找到bind-address = 127.0.0.1这一行
+改为bind-address = 0.0.0.0即可或简单一点注释掉也行
+
+修改完成保存后，需要重启MySQL服务才会生效
+
+接着需要为用户赋予远程登录的权限，使用以下用户授权步骤即可
+————————————————
+版权声明：本文为CSDN博主「奉君逍遥」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/hwx865/article/details/90287715
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
