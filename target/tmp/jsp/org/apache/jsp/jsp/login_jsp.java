@@ -69,38 +69,38 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
 
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
 
-      out.write("\n");
-      out.write("<!DOCTYPE html>\n");
-      out.write("<html lang=\"zh-CN\">\n");
-      out.write("<head>\n");
-      out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("<meta http-equiv=\"pragma\" content=\"no-cache\">\n");
-      out.write("<meta http-equiv=\"cache-control\" content=\"no-cache\">\n");
-      out.write("<meta http-equiv=\"expires\" content=\"0\">\n");
-      out.write("<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n");
-      out.write("<meta http-equiv=\"description\" content=\"This is my page\">\n");
-      out.write("\n");
-      out.write("<title>机房门禁系统</title>\n");
-      out.write("\n");
-      out.write("<script type=\"text/javascript\" src=\"./lib/jquery.js\"></script>\n");
-      out.write("<script type=\"text/javascript\" src=\"./lib/bootstrap.min.js\"></script>\n");
-      out.write("<link type=\"text/css\" rel=\"stylesheet\" href=\"./lib/bootstrap.min.css\" />\n");
-      out.write("\n");
-      out.write("<!-- Custom styles for this template -->\n");
-      out.write("<link href=\"./lib/signin.css\" rel=\"stylesheet\">\n");
-      out.write("\n");
-      out.write("</head>\n");
-      out.write("\n");
-      out.write("<body>\n");
-      out.write("\t<div class=\"container\">\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE html>\r\n");
+      out.write("<html lang=\"zh-CN\">\r\n");
+      out.write("<head>\r\n");
+      out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("<meta http-equiv=\"pragma\" content=\"no-cache\">\r\n");
+      out.write("<meta http-equiv=\"cache-control\" content=\"no-cache\">\r\n");
+      out.write("<meta http-equiv=\"expires\" content=\"0\">\r\n");
+      out.write("<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\r\n");
+      out.write("<meta http-equiv=\"description\" content=\"This is my page\">\r\n");
+      out.write("\r\n");
+      out.write("<title>机房门禁系统</title>\r\n");
+      out.write("\r\n");
+      out.write("<script type=\"text/javascript\" src=\"./lib/jquery.js\"></script>\r\n");
+      out.write("<script type=\"text/javascript\" src=\"./lib/bootstrap.min.js\"></script>\r\n");
+      out.write("<link type=\"text/css\" rel=\"stylesheet\" href=\"./lib/bootstrap.min.css\" />\r\n");
+      out.write("\r\n");
+      out.write("<!-- Custom styles for this template -->\r\n");
+      out.write("<link href=\"./lib/signin.css\" rel=\"stylesheet\">\r\n");
+      out.write("\r\n");
+      out.write("</head>\r\n");
+      out.write("\r\n");
+      out.write("<body>\r\n");
+      out.write("\t<div class=\"container\">\r\n");
       out.write("\t\t");
       //  form:form
       org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_form_0 = (org.springframework.web.servlet.tags.form.FormTag) _jspx_tagPool_form_form_role_modelAttribute_class.get(org.springframework.web.servlet.tags.form.FormTag.class);
@@ -114,26 +114,26 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
         int _jspx_eval_form_form_0 = _jspx_th_form_form_0.doStartTag();
         if (_jspx_eval_form_form_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
           do {
-            out.write("\n");
-            out.write("\t\t\t<h2 class=\"form-signin-heading\">请登录</h2>\n");
-            out.write("\t\t\t<label for=\"inputEmail\" class=\"sr-only\">管理员</label>\n");
+            out.write("\r\n");
+            out.write("\t\t\t<h2 class=\"form-signin-heading\">请登录</h2>\r\n");
+            out.write("\t\t\t<label for=\"inputEmail\" class=\"sr-only\">管理员</label>\r\n");
             out.write("\t\t\t");
             if (_jspx_meth_form_input_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
               return;
-            out.write("\n");
-            out.write("\t\t\t<label for=\"inputPassword\" class=\"sr-only\">密码</label>\n");
+            out.write("\r\n");
+            out.write("\t\t\t<label for=\"inputPassword\" class=\"sr-only\">密码</label>\r\n");
             out.write("\t\t\t");
             if (_jspx_meth_form_password_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
               return;
-            out.write("\n");
+            out.write("\r\n");
             out.write("\t\t\t");
             if (_jspx_meth_form_select_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
               return;
-            out.write("\n");
-            out.write("\t\t\t<div class=\"checkbox\">\n");
-            out.write("\t\t\t\t<label> <input type=\"checkbox\" value=\"remember-me\"> Remember me\n");
-            out.write("\t\t\t\t</label>\n");
-            out.write("\t\t\t</div>\n");
+            out.write("\r\n");
+            out.write("\t\t\t<div class=\"checkbox\">\r\n");
+            out.write("\t\t\t\t<label> <input type=\"checkbox\" value=\"remember-me\"> Remember me\r\n");
+            out.write("\t\t\t\t</label>\r\n");
+            out.write("\t\t\t</div>\r\n");
             out.write("\t\t\t<!--  \t");
             //  form:errors
             org.springframework.web.servlet.tags.form.ErrorsTag _jspx_th_form_errors_0 = (org.springframework.web.servlet.tags.form.ErrorsTag) _jspx_tagPool_form_errors_path_cssClass_nobody.get(org.springframework.web.servlet.tags.form.ErrorsTag.class);
@@ -195,8 +195,8 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
               _jspx_th_form_errors_2.doFinally();
               _jspx_tagPool_form_errors_id_cssClass_nobody.reuse(_jspx_th_form_errors_2);
             }
-            out.write("\t-->\n");
-            out.write("\t\t\t<button class=\"btn btn-lg btn-primary btn-block\" type=\"submit\">登录</button>\n");
+            out.write("\t-->\r\n");
+            out.write("\t\t\t<button class=\"btn btn-lg btn-primary btn-block\" type=\"submit\">登录</button>\r\n");
             out.write("\t\t");
             int evalDoAfterBody = _jspx_th_form_form_0.doAfterBody();
             if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -214,11 +214,11 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
         _jspx_th_form_form_0.doFinally();
         _jspx_tagPool_form_form_role_modelAttribute_class.reuse(_jspx_th_form_form_0);
       }
-      out.write("\n");
-      out.write("\t</div>\n");
-      out.write("</body>\n");
-      out.write("</html>\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\t</div>\r\n");
+      out.write("</body>\r\n");
+      out.write("</html>\r\n");
+      out.write("\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
@@ -306,11 +306,11 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       int _jspx_eval_form_select_0 = _jspx_th_form_select_0.doStartTag();
       if (_jspx_eval_form_select_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
-          out.write("\n");
+          out.write("\r\n");
           out.write("\t\t\t\t");
           if (_jspx_meth_c_forEach_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_select_0, _jspx_page_context, _jspx_push_body_count_form_select_0))
             return true;
-          out.write("\n");
+          out.write("\r\n");
           out.write("\t\t\t");
           int evalDoAfterBody = _jspx_th_form_select_0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -346,10 +346,10 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       int _jspx_eval_c_forEach_0 = _jspx_th_c_forEach_0.doStartTag();
       if (_jspx_eval_c_forEach_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
-          out.write("\n");
+          out.write("\r\n");
           out.write("\t\t\t\t\t<option>");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${c}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("</option>\n");
+          out.write("</option>\r\n");
           out.write("\t\t\t\t");
           int evalDoAfterBody = _jspx_th_c_forEach_0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)

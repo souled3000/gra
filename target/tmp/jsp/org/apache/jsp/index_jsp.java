@@ -42,37 +42,38 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
+      out.write('\r');
       out.write('\n');
 
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 
-      out.write("\n");
-      out.write("\n");
-      out.write("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n");
-      out.write("<html>\n");
-      out.write("  <head>\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\r\n");
+      out.write("<html>\r\n");
+      out.write("  <head>\r\n");
       out.write("    <base href=\"");
       out.print(basePath);
-      out.write("\">\n");
-      out.write("    \n");
-      out.write("    <title>机房门禁系统</title>\n");
-      out.write("\t<meta http-equiv=\"pragma\" content=\"no-cache\">\n");
-      out.write("\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\n");
-      out.write("\t<meta http-equiv=\"expires\" content=\"0\">    \n");
-      out.write("\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\n");
-      out.write("\t<meta http-equiv=\"description\" content=\"This is my page\">\n");
-      out.write("\t<!--\n");
-      out.write("\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n");
-      out.write("\t-->\n");
-      out.write("\t<script type=\"text/javascript\">\n");
+      out.write("\">\r\n");
+      out.write("    \r\n");
+      out.write("    <title>机房门禁系统</title>\r\n");
+      out.write("\t<meta http-equiv=\"pragma\" content=\"no-cache\">\r\n");
+      out.write("\t<meta http-equiv=\"cache-control\" content=\"no-cache\">\r\n");
+      out.write("\t<meta http-equiv=\"expires\" content=\"0\">    \r\n");
+      out.write("\t<meta http-equiv=\"keywords\" content=\"keyword1,keyword2,keyword3\">\r\n");
+      out.write("\t<meta http-equiv=\"description\" content=\"This is my page\">\r\n");
+      out.write("\t<!--\r\n");
+      out.write("\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\r\n");
+      out.write("\t-->\r\n");
+      out.write("\t<script type=\"text/javascript\">\r\n");
       out.write("\tlocation.href=\"");
       out.print(basePath);
-      out.write("login\";\n");
-      out.write("\t</script>\n");
-      out.write("  </head>\n");
-      out.write("  \n");
-      out.write("</html>\n");
+      out.write("login\";\r\n");
+      out.write("\t</script>\r\n");
+      out.write("  </head>\r\n");
+      out.write("  \r\n");
+      out.write("</html>\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
